@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía - Zacatlán y Chignahuapan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><i class="fas fa-utensils"></i> Gastronomía Local</h1>
+                    <p>Zacatlán & Chignahuapan</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="hotel.html"><i class="fas fa-hotel"></i> Hoteles</a></li>
+                    <li><a href="lugares.html"><i class="fas fa-map-marked-alt"></i> Lugares</a></li>
+                    <li><a href="gastronomia.html" class="active"><i class="fas fa-utensils"></i> Gastronomía</a></li>
+                    <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gastronomia-section">
+        <div class="container">
+            <h2 class="section-title">Sabores de la Sierra Norte</h2>
+            
+            <!-- Platos Típicos -->
+            <div class="platos-section">
+                <h3><i class="fas fa-utensil-spoon"></i> Platos Típicos</h3>
+                <div class="platos-grid">
+                    <div class="plato-card">
+                        <div class="plato-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="plato-info">
+                            <h4>Trucha al Mojo de Ajo</h4>
+                            <p class="plato-desc">Trucha fresca de río preparada con ajo y mantequilla. Especialidad de Chignahuapan.</p>
+                            <div class="plato-details">
+                                <span><i class="fas fa-peso-sign"></i> $180 - $250 MXN</span>
+                                <span><i class="fas fa-clock"></i> 15-20 min</span>
+                            </div>
+                            <p class="plato-lugar"><strong>Dónde probarlo:</strong> Restaurantes junto a la laguna</p>
+                        </div>
+                    </div>
+
+                    <div class="plato-card">
+                        <div class="plato-img" style="background-image: url('https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="plato-info">
+                            <h4>Cecina de Res</h4>
+                            <p class="plato-desc">Carne seca y salada, acompañada de salsa borracha y nopales.</p>
+                            <div class="plato-details">
+                                <span><i class="fas fa-peso-sign"></i> $150 - $200 MXN</span>
+                                <span><i class="fas fa-clock"></i> 10-15 min</span>
+                            </div>
+                            <p class="plato-lugar"><strong>Dónde probarlo:</strong> Mercado municipal de Zacatlán</p>
+                        </div>
+                    </div>
+
+                    <div class="plato-card">
+                        <div class="plato-img" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="plato-info">
+                            <h4>Mole Poblano</h4>
+                            <p class="plato-desc">Mole tradicional con más de 20 ingredientes, incluyendo chocolate.</p>
+                            <div class="plato-details">
+                                <span><i class="fas fa-peso-sign"></i> $120 - $180 MXN</span>
+                                <span><i class="fas fa-clock"></i> 25-30 min</span>
+                            </div>
+                            <p class="plato-lugar"><strong>Dónde probarlo:</strong> Fonda Doña Chela, Zacatlán</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="bebidas-section">
+                <h3><i class="fas fa-wine-glass-alt"></i> Bebidas Tradicionales</h3>
+                <div class="bebidas-grid">
+                    <div class="bebida-card">
+                        <h4><i class="fas fa-apple-alt"></i> Sidra de Manzana</h4>
+                        <p>Bebida fermentada de manzana, natural y burbujeante. Variedades dulce y seca.</p>
+                        <p class="bebida-precio">Botella: $80 - $150 MXN</p>
+                    </div>
+                    <div class="bebida-card">
+                        <h4><i class="fas fa-cocktail"></i> Licor de Manzana</h4>
+                        <p>Licor artesanal de manzana con hierbas locales. Perfecto como digestivo.</p>
+                        <p class="bebida-precio">Botella: $120 - $200 MXN</p>
+                    </div>
+                    <div class="bebida-card">
+                        <h4><i class="fas fa-coffee"></i> Café de la Sierra</h4>
+                        <p>Café orgánico cultivado en las montañas de la región.</p>
+                        <p class="bebida-precio">Taza: $25 - $40 MXN</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurantes Recomendados -->
+            <div class="restaurantes-section">
+                <h3><i class="fas fa-star"></i> Restaurantes Recomendados</h3>
+                <div class="restaurantes-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Especialidad</th>
+                                <th>Ubicación</th>
+                                <th>Precio Promedio</th>
+                                <th>Horario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Trucha Feliz</td>
+                                <td>Trucha al gusto</td>
+                                <td>Chignahuapan centro</td>
+                                <td>$$</td>
+                                <td>9:00 - 20:00</td>
+                            </tr>
+                            <tr>
+                                <td>El Jardín de la Sidra</td>
+                                <td>Comida regional</td>
+                                <td>Zacatlán centro</td>
+                                <td>$$</td>
+                                <td>8:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Mercado Municipal</td>
+                                <td>Comida casera</td>
+                                <td>Ambas ciudades</td>
+                                <td>$</td>
+                                <td>7:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Café del Bosque</td>
+                                <td>Desayunos típicos</td>
+                                <td>Carretera Zacatlán</td>
+                                <td>$$</td>
+                                <td>7:00 - 16:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dulces Regionales -->
+            <div class="dulces-section">
+                <h3><i class="fas fa-cookie-bite"></i> Dulces y Postres</h3>
+                <div class="dulces-grid">
+                    <div class="dulce-item">
+                        <h4>Dulce de Manzana</h4>
+                        <p>Manzana cristalizada con canela y piloncillo</p>
+                    </div>
+                    <div class="dulce-item">
+                        <h4>Queso de Puerco</h>
+                        <p>Queso artesanal ahumado con leña</p>
+                    </div>
+                    <div class="dulce-item">
+                        <h4>Pan de Queso</h4>
+                        <p>Pan relleno de queso fresco</p>
+                    </div>
+                    <div class="dulce-item">
+                        <h4>Nieves Artesanales</h4>
+                        <p>Sabores: manzana, queso, sidra, rompope</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Guía Turística de Zacatlán y Chignahuapan</p>
+                <p><a href="index.html">Volver al inicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

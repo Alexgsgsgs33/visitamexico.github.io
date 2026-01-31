@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacatlán y Chignahuapan | Puebla, México</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><i class="fas fa-mountain-sun"></i> Zacatlán & Chignahuapan</h1>
+                    <p>Puebla Mágico</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="hotel.html"><i class="fas fa-hotel"></i> Hoteles</a></li>
+                    <li><a href="lugares.html"><i class="fas fa-map-marked-alt"></i> Lugares Turísticos</a></li>
+                    <li><a href="gastronomia.html"><i class="fas fa-utensils"></i> Gastronomía</a></li>
+                    <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/zacatlan-bg.jpg');">
+                <div class="slide-content">
+                    <h2>Zacatlán de las Manzanas</h2>
+                    <p>Pueblo Mágico famoso por sus relojes, sidra y paisajes montañosos</p>
+                    <a href="#zacatlan" class="btn">Explorar Zacatlán</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/chignahuapan-bg.jpg');">
+                <div class="slide-content">
+                    <h2>Chignahuapan</h2>
+                    <p>Tierra de esferas navideñas y aguas termales</p>
+                    <a href="#chignahuapan" class="btn">Descubrir Chignahuapan</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Información General -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">Destinos de Ensueño en la Sierra Norte de Puebla</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Clima Templado</h3>
+                    <p>Temperatura promedio: 16°C. Ideal para visitar todo el año.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-signs"></i>
+                    <h3>Fácil Acceso</h3>
+                    <p>A 2-3 horas desde la Ciudad de Puebla por carretera panorámica.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Seguridad</h3>
+                    <p>Destinos seguros para turismo familiar y de aventura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zacatlán -->
+    <section id="zacatlan" class="destino-section">
+        <div class="container">
+            <div class="destino-header">
+                <h2><i class="fas fa-apple-alt"></i> Zacatlán de las Manzanas</h2>
+                <div class="destino-tags">
+                    <span class="tag"><i class="fas fa-magic"></i> Pueblo Mágico</span>
+                    <span class="tag"><i class="fas fa-clock"></i> Relojes Monumentales</span>
+                    <span class="tag"><i class="fas fa-wine-bottle"></i> Sidra Artesanal</span>
+                </div>
+            </div>
+            
+            <div class="destino-content">
+                <div class="destino-text">
+                    <h3>¿Por qué visitar Zacatlán?</h3>
+                    <p>Zacatlán es famoso por su producción de manzana y sidra. Destacan:</p>
+                    <ul>
+                        <li><strong>Reloj Floral:</strong> Único en Latinoamérica con carátula de flores naturales</li>
+                        <li><strong>Barranca de los Jilgueros:</strong> Mirador con vistas espectaculares</li>
+                        <li><strong>Fábrica de Relojes:</strong> Centro de relojería monumental</li>
+                        <li><strong>Feria de la Manzana:</strong> Agosto, con degustaciones y eventos culturales</li>
+                    </ul>
+                    <div class="quick-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Población: ~33,000 hab.</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Altitud: 2,020 msnm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destino-image">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zacatlán">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chignahuapan -->
+    <section id="chignahuapan" class="destino-section alt">
+        <div class="container">
+            <div class="destino-header">
+                <h2><i class="fas fa-spa"></i> Chignahuapan</h2>
+                <div class="destino-tags">
+                    <span class="tag"><i class="fas fa-tree"></i> Esferas Navideñas</span>
+                    <span class="tag"><i class="fas fa-water"></i> Aguas Termales</span>
+                    <span class="tag"><i class="fas fa-fish"></i> Trucha Fresca</span>
+                </div>
+            </div>
+            
+            <div class="destino-content">
+                <div class="destino-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chignahuapan">
+                </div>
+                <div class="destino-text">
+                    <h3>El Paraíso de las Esferas</h3>
+                    <p>Chignahuapan es el principal productor de esferas navideñas en México:</p>
+                    <ul>
+                        <li><strong>Laguna de Chignahuapan:</strong> Hermoso cuerpo de agua en el centro</li>
+                        <li><strong>Basílica de la Inmaculada Concepción:</strong> Con la Virgen más grande de Latinoamérica</li>
+                        <li><strong>Aguas Termales:</strong> Baños curativos naturales</li>
+                        <li><strong>Feria de la Esfera:</strong> Octubre a Diciembre, con millones de esferas artesanales</li>
+                    </ul>
+                    <div class="quick-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Población: ~19,000 hab.</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Altitud: 2,280 msnm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Interactivo -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Ubicación en el Estado de Puebla</h2>
+            <div id="map" style="height: 400px; border-radius: 10px;"></div>
+            <div class="map-info">
+                <div class="distance-info">
+                    <h3>Distancias desde:</h3>
+                    <ul>
+                        <li><strong>Ciudad de Puebla:</strong> 120 km (2.5 hrs)</li>
+                        <li><strong>CDMX:</strong> 210 km (4 hrs)</li>
+                        <li><strong>Tlaxcala:</strong> 90 km (2 hrs)</li>
+                    </ul>
+                </div>
+                <div class="transport-info">
+                    <h3>Transporte Recomendado:</h3>
+                    <p><i class="fas fa-car"></i> Auto particular o tour operadores</p>
+                    <p><i class="fas fa-bus"></i> Autobuses desde CAPU Puebla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips de Viaje -->
+    <section class="tips-section">
+        <div class="container">
+            <h2 class="section-title">Consejos para tu Visita</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Mejor Época</h3>
+                    <p>Octubre a Mayo - Temporada seca con días soleados y noches frescas.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Qué Comprar</h3>
+                    <p>Sidra, licor de manzana, queso, dulces regionales y esferas navideñas.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotografía</h3>
+                    <p>Amaneceres en la barranca y atardeceres en la laguna son imprescindibles.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Vestimenta</h3>
+                    <p>Ropa abrigadora, impermeable y zapatos cómodos para caminar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto Turístico</h3>
+                    <p><i class="fas fa-phone"></i> Oficina de Turismo Zacatlán: 797 975 1045</p>
+                    <p><i class="fas fa-phone"></i> Turismo Chignahuapan: 797 971 0046</p>
+                    <p><i class="fas fa-envelope"></i> contacto@zacatlanchignahuapan.tur</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="hotel.html">Hoteles y Hospedaje</a></li>
+                        <li><a href="gastronomia.html">Restaurantes Recomendados</a></li>
+                        <li><a href="eventos.html">Calendario de Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Guía Turística de Zacatlán y Chignahuapan. Sitio para host local.</p>
+                <p>Desarrollado con fines educativos y promocionales.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
